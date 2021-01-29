@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GiftExpertApp test suit GiftExpertApp should match snapshot 1`] = `
+<div>
+  <h2>
+     GitfExpertApp 
+  </h2>
+  <AddCategory
+    setHeroes={[Function]}
+  />
+  <hr />
+</div>
+`;
+
+exports[`GiftExpertApp test suit GiftExpertApp should show a list of categories 1`] = `
+<div>
+  <h2>
+     GitfExpertApp 
+  </h2>
+  <AddCategory
+    setHeroes={[Function]}
+  />
+  <hr />
+  <GiftGrid
+    heroe="Naruto"
+    key="Naruto"
+  />
+  <GiftGrid
+    heroe="Goku"
+    key="Goku"
+  />
+</div>
+`;

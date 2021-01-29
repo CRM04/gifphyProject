@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFetchGif } from '../hooks/useFetchGift';
 import { GiftItem } from './GiftIteam';
+import PropTypes from 'prop-types';
 
 export const GiftGrid = ({ heroe }) => {
 
@@ -17,4 +18,8 @@ export const GiftGrid = ({ heroe }) => {
             </div>
         </>
     );
+}
+
+GiftGrid.propTypes = {
+    heroe: PropTypes.string.isRequired
 }

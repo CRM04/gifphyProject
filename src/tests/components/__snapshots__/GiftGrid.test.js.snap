@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GiftGrid test suit Giftgrid should match 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+     
+    Naruto
+     
+  </h3>
+  <p>
+    Loading... 
+  </p>
+  <div
+    className="card-grid animate__animated animate__fadeIn"
+  />
+</Fragment>
+`;
+
+exports[`GiftGrid test suit Should show gifs when using useFetchGifs and hide the loading section 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+     
+    Goku
+     
+  </h3>
+  <div
+    className="card-grid animate__animated animate__fadeIn"
+  >
+    <GiftItem
+      id="1"
+      key="1"
+      title="GoogleImage"
+      url="http://google.com/imagen.jpg"
+    />
+  </div>
+</Fragment>
+`;

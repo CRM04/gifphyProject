@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { AddCategory } from './AddCategory';
 import { GiftGrid } from './GiftGrid';
 
-const GiftExpertApp = () => {
+const GiftExpertApp = ( {categories = []} ) => {
 
-    const [Heroes, setHeroes] = useState(['Naruto']);
+    const [Heroes, setHeroes] = useState(categories);
 
     return (
         <div>

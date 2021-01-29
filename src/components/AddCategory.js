@@ -11,7 +11,7 @@ export const AddCategory = ({ setHeroes }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if ( inputValue.trim().length > 1 ) {
+        if (inputValue.trim().length > 1) {
             setHeroes(her => [inputValue, ...her]);
             setinputValue('');
         }
@@ -19,6 +19,7 @@ export const AddCategory = ({ setHeroes }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p> {inputValue} </p>
             <input type="text" value={inputValue} onChange={inputValueChange} ></input>
         </form>
     );
@@ -26,6 +27,6 @@ export const AddCategory = ({ setHeroes }) => {
 }
 
 AddCategory.propTypes = {
-    setHeroes : propTypes.func.isRequired
+    setHeroes: propTypes.func.isRequired
 }
 
